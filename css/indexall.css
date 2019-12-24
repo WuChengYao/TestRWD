@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+.all{
+    width: 100%;
+    height: 100vh;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url("http://www.luke54.org/images/647a844eaad5d51011df1be9f42900ba.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   
+    padding-top: 50vh; 
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color:rgba(22, 21, 21, 0.486); 
+    position: relative;
+}
+.h2{
+    width: 6%;
+    background-color: rgba(0, 0, 255, 0.281);
+    position: absolute;
+    left: 2%;
+    top: 2%;
+}
+.h2 h2{
+    margin:0;
+    text-align: center;
+}
+.content{
+    width: 80%;
+    height: 40vh;
+    background-color: rgba(24, 215, 221, 0.493);
+    position: absolute;
+    left: 10%;
+    top: 5vh;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.content1{
+    width: calc(25% - 5px);
+    height: calc(40vh - 10px);
+    background-color: crimson;
+}
+@media screen and (max-width:768px){
+    .main{
+        background-image: url("https://img.chinatimes.com/newsphoto/2016-07-24/656/20160724001870.jpg");
+    }
+    .h2{
+        color: aliceblue;
+    }
+    .content{
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    .content1{
+        width: calc(50% - 5px);
+        height: calc(20vh - 10px);
+        background-color: rgb(143, 220, 20);
+    }
+}
+@media screen and (max-width:374px){
+    .main{
+        background-image: url("http://www.chinapoesy.com/UploadFiles/Poesy/20160727_aaf06107-47ec-452c-8d02-7f9db754ec4d.jpg");
+    }
+    .h2{
+        color: rgb(11, 238, 30);
+    }
+    .content1{
+        width: calc(100% - 5px);
+        height: calc(10vh - 10px);
+        background-color: rgb(40, 20, 220);
+    }
+}

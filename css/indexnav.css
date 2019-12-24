@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    
+}
+.sala p{
+    margin: 0;
+}
+.sala a{
+    text-align: center;
+    line-height: 5vh;  
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(127, 178, 255, 0.493);
+    position: fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.logo{
+    width: 10%;
+    height: 10vh;
+    background-image: url("http://i.imgur.com/cyQza8r.png");
+    background-size: cover;
+    background-position: center;
+}
+.sala{
+    width: 30%;
+    height: 5vh;
+    background-color:rgba(172, 255, 47, 0);
+    display: flex;
+    
+}
+.sala1,.sala2,.sala3,.sala4{
+    width: 25%;
+    height: 5vh;
+    background-color:rgba(3, 3, 3, 0.507);
+
+}
+.sala11,.sala21,.sala31,.sala41{
+    width: 100%;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    float: left;
+}
+.sala12,.sala22,.sala32,.sala42{
+    width: 100%;
+    height: 20vh;
+    background-color:rgba(3, 3, 3, 0.507);
+    display: none;
+}
+.sala1:hover .sala12,
+.sala2:hover .sala22,
+.sala3:hover .sala32,
+.sala4:hover .sala42{
+    display: block;
+}
+.sala12 a p:hover,
+.sala22 a p:hover,
+.sala32 a p:hover,
+.sala42 a p:hover{
+    background-color: rgba(0, 0, 255, 0.425);
+}
+@media screen and (max-width:800px){
+    .logo{
+        width: 20%;
+        height: 10vh;  
+    }
+}
+@media screen and (max-width:430px){
+    .logo{
+        width: 25%;
+        height: 10vh;  
+    }
+    .sala{
+        width: 20%;
+        height: 10vh;
+        background-color: rgba(0, 0, 255, 0.623);
+    }
+    .sala1,.sala2,.sala3,.sala4{
+        display: none;
+    }
+}
